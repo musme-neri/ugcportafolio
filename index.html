@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; background-color: #ffffff !important; }
+        body { font-family: 'Poppins', sans-serif; background-color: #ffffff !important; overflow-x: hidden; }
         .text-olive { color: #688662; }
         .bg-olive { background-color: #688662; }
     </style>
@@ -14,18 +15,16 @@
 
 <body class="p-0 m-0">
 
-    <!-- SECCIÓN 1: FOTO Y CONTACTO -->
-    <section class="pt-0 pb-12 px-6">
+    <section class="pt-0 pb-12 px-6" data-aos="fade-down" data-aos-duration="1000">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-b-[3rem] shadow-sm flex flex-col items-center">
             
-            <img src="image1.jpeg" alt="Musme Neri" class="w-full max-w-sm rounded-2xl shadow-[0_15px_25px_-5px_rgba(0,0,0,0.5)] object-cover">
+            <img src="image1.jpeg" alt="Musme Neri" class="w-full max-w-sm rounded-2xl shadow-[0_15px_25px_-5px_rgba(0,0,0,0.5)] object-cover" data-aos="zoom-in" data-aos-delay="300">
                         
             <h1 class="text-6xl md:text-7xl font-bold text-gray-800 text-center mb-2 mt-4">Musme Neri</h1>
             <p class="text-lg md:text-4xl text-gray-700 text-center mb-4 break-words px-2">UGC Creator | Content Creator</p>
             <p class="text-xl md:text-2xl text-olive font-semibold text-center mb-4">Contenido auténtico que conecta y genera resultados</p>
             
             <div class="space-y-1 md:space-y-2 flex flex-col items-center mt-2">
-                <!-- TikTok (Link) -->
                 <a href="https://www.tiktok.com/@la.musita91" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity">
                     <svg class="w-5 h-5 md:w-8 md:h-8 text-olive" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.77 0 2.89 2.89 0 0 1 2.89-2.89h.35V7.47h-.35a6.34 6.34 0 1 0 6.34 6.34V7.55a8.77 8.77 0 0 0 3.72 1.48v-2.34z"/>
@@ -33,7 +32,6 @@
                     <span class="text-base md:text-2xl text-olive font-medium underline">@la.musita91</span>
                 </a>
                 
-                <!-- Email (Link) -->
                 <a href="mailto:wendymus2310@gmail.com" class="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity">
                     <svg class="w-5 h-5 md:w-8 md:h-8 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 4h16c1.1 0 2-.9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/>
@@ -41,7 +39,6 @@
                     <span class="text-base md:text-2xl text-olive font-medium underline">wendymus2310@gmail.com</span>
                 </a>
                 
-                <!-- Ubicación (Se queda igual) -->
                 <div class="flex items-center gap-2 md:gap-3">
                     <svg class="w-5 h-5 md:w-8 md:h-8 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/>
@@ -52,8 +49,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 2: ¿POR QUÉ EL UGC FUNCIONA? -->
-    <section class="pb-12 px-6">
+    <section class="pb-12 px-6" data-aos="fade-up">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-[3rem] shadow-sm">
             
             <div class="flex justify-center mb-6">
@@ -63,30 +59,26 @@
             <div class="text-center mb-12">
                 <h2 class="text-4xl text-olive font-bold mb-6">¿Por qué el UGC funciona?</h2>
                 <p class="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
-                    Hoy, las personas confían más en recommendations auténticas que en la publicidad tradicional.<br>
+                    Hoy, las personas confían más en recomendaciones auténticas que en la publicidad tradicional.<br>
                     El contenido generado por creadores permite a las marcas conectar con su audiencia de una manera natural, cercana y creíble, fortaleciendo la confianza y favoreciendo las decisiones de compra.
                 </p>
             </div>
 
-            <!-- BLOQUES: Autenticidad, Confianza y Resultados -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     
-                <!-- Autenticidad -->
-                <div class="bg-[#fdfdf9] p-8 rounded-3xl border border-gray-100 flex flex-col items-center text-center shadow-sm">
+                <div class="bg-[#fdfdf9] p-8 rounded-3xl border border-gray-100 flex flex-col items-center text-center shadow-sm" data-aos="fade-up" data-aos-delay="100">
                     <img src="corazon.png" alt="Autenticidad" class="w-16 h-16 mb-4 object-contain">
                     <h3 class="text-xl font-bold text-olive mb-3">Autenticidad</h3>
                     <p class="text-gray-600 text-sm">Contenido natural que genera confianza y se integra de forma orgánica.</p>
                 </div>
 
-                <!-- Confianza -->
-                <div class="bg-[#fdfdf9] p-8 rounded-3xl border border-gray-100 flex flex-col items-center text-center shadow-sm">
+                <div class="bg-[#fdfdf9] p-8 rounded-3xl border border-gray-100 flex flex-col items-center text-center shadow-sm" data-aos="fade-up" data-aos-delay="200">
                     <img src="manos.png" alt="Confianza" class="w-16 h-16 mb-4 object-contain">
                     <h3 class="text-xl font-bold text-olive mb-3">Confianza</h3>
                     <p class="text-gray-600 text-sm">Las recomendaciones reales fortalecen la credibilidad y acercan a las personas a la marca.</p>
                 </div>
 
-                <!-- Resultados -->
-                <div class="bg-[#fdfdf9] p-8 rounded-3xl border border-gray-100 flex flex-col items-center text-center shadow-sm">
+                <div class="bg-[#fdfdf9] p-8 rounded-3xl border border-gray-100 flex flex-col items-center text-center shadow-sm" data-aos="fade-up" data-aos-delay="300">
                     <img src="carrito.png" alt="Resultados" class="w-16 h-16 mb-4 object-contain">
                     <h3 class="text-xl font-bold text-olive mb-3">Resultados</h3>
                     <p class="text-gray-600 text-sm">Un contenido auténtico puede influir en la intención de compra sin sentirse como publicidad tradicional.</p>
@@ -97,8 +89,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 3: ¿POR QUÉ TRABAJAR CONMIGO? -->
-    <section class="pb-12 px-6">
+    <section class="pb-12 px-6" data-aos="fade-up">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-[3rem] shadow-sm">
             
             <div class="flex justify-center mb-6">
@@ -110,7 +101,7 @@
             </div>
 
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
+                <div class="md:w-1/2" data-aos="fade-right" data-aos-delay="200">
                     <p class="text-xl text-gray-700 mb-8 text-center md:text-left">Creo contenido auténtico que genera confianza, crea conexiones reales y representa la esencia de cada marca.</p>
                     <ul class="text-gray-700 space-y-6 text-lg">
                         <li class="flex items-start gap-3">
@@ -132,9 +123,7 @@
                     </ul>
                 </div>
 
-                <!-- Reemplaza el bloque de la imagen en la SECCIÓN 3 -->
-                <div class="md:w-1/2 flex justify-center">
-                    <!-- Este div crea el recuadro blanco -->
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-delay="300">
                     <div class="bg-white p-4 rounded-3xl shadow-xl">
                         <img src="image2.jpeg" alt="Musme Neri" class="w-full max-w-sm rounded-2xl object-cover">
                     </div>
@@ -143,8 +132,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 4: MARCAS CON LAS QUE HE COLABORADO -->
-    <section class="pb-12 px-6">
+    <section class="pb-12 px-6" data-aos="fade-up">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-[3rem] shadow-sm text-center">
             
             <div class="flex justify-center mb-6">
@@ -154,36 +142,32 @@
             <h2 class="text-4xl font-bold text-olive mb-4">Marcas con las que he colaborado</h2>
             <p class="text-lg text-gray-600 mb-12">Colaboraciones desarrolladas a través de campañas de contenido UGC y plataformas para creadores.</p>
             
-            <!-- Cuadrícula de Logos de Marcas -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
-                <!-- Marca 1 --><div class="bg-white p-0 rounded-3xl shadow-sm flex items-center justify-center h-28"><img src="garnier.jpeg" alt="Garnier" class="max-h-full max-w-full object-contain"></div>
-                <!-- Marca 2 --><div class="bg-white p-4 rounded-3xl shadow-sm flex items-center justify-center h-28"><img src="cerave.jpeg" alt="CeraVe" class="max-h-full max-w-full object-contain"></div>
-                <!-- Marca 3 --><div class="bg-white p-3 rounded-3xl shadow-sm flex items-center justify-center h-28"><img src="neutrogena.jpeg" alt="Neutrogena" class="max-h-full max-w-full object-contain"></div>
-                <!-- Marca 4 --><div class="bg-white p-1 rounded-3xl shadow-sm flex items-center justify-center h-28"><img src="loreal.jpeg" alt="L'Oréal Paris" class="max-h-full max-w-full object-contain"></div>
-                <!-- Marca 5 --><div class="bg-white p-6 rounded-3xl shadow-sm flex items-center justify-center h-28"><img src="larocheposay.jpeg" alt="La Roche Posay" class="max-h-full max-w-full object-contain"></div>
-                <!-- Marca 6 --><div class="bg-white p-1 rounded-3xl shadow-sm flex items-center justify-center h-28"><img src="pantene.jpeg" alt="Pantene" class="max-h-full max-w-full object-contain"></div>
+                <div class="bg-white p-0 rounded-3xl shadow-sm flex items-center justify-center h-28" data-aos="zoom-in" data-aos-delay="50"><img src="garnier.jpeg" alt="Garnier" class="max-h-full max-w-full object-contain"></div>
+                <div class="bg-white p-4 rounded-3xl shadow-sm flex items-center justify-center h-28" data-aos="zoom-in" data-aos-delay="100"><img src="cerave.jpeg" alt="CeraVe" class="max-h-full max-w-full object-contain"></div>
+                <div class="bg-white p-3 rounded-3xl shadow-sm flex items-center justify-center h-28" data-aos="zoom-in" data-aos-delay="150"><img src="neutrogena.jpeg" alt="Neutrogena" class="max-h-full max-w-full object-contain"></div>
+                <div class="bg-white p-1 rounded-3xl shadow-sm flex items-center justify-center h-28" data-aos="zoom-in" data-aos-delay="200"><img src="loreal.jpeg" alt="L'Oréal Paris" class="max-h-full max-w-full object-contain"></div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm flex items-center justify-center h-28" data-aos="zoom-in" data-aos-delay="250"><img src="larocheposay.jpeg" alt="La Roche Posay" class="max-h-full max-w-full object-contain"></div>
+                <div class="bg-white p-1 rounded-3xl shadow-sm flex items-center justify-center h-28" data-aos="zoom-in" data-aos-delay="300"><img src="pantene.jpeg" alt="Pantene" class="max-h-full max-w-full object-contain"></div>
             </div>
 
         </div>
     </section>
 
-    <!-- SECCIÓN 5: CONTENIDO DESTACADO (VIDEOS) -->
-    <section class="pb-12 px-6">
+    <section class="pb-12 px-6" data-aos="fade-up">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-[3rem] shadow-sm text-center">
 
-            <!-- Esfera decorativa -->
             <div class="flex justify-center mb-6">
                 <img src="image3.png" alt="Esfera de iluminación" class="w-32 h-32 object-contain">
             </div>
 
-            <!-- Título y subtítulo agregados -->
             <h2 class="text-4xl font-bold text-olive mb-4">Contenido destacado</h2>
             <p class="text-lg text-gray-600 mb-12">Haz click en cualquier video para ver mi trabajo</p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <script>
                     for(let i=1; i<=6; i++) {
-                        document.write(`<div class="relative mx-auto w-64 h-[480px] bg-black rounded-[2.5rem] border-[8px] border-gray-800 shadow-xl overflow-hidden group">
+                        document.write(`<div class="relative mx-auto w-64 h-[480px] bg-black rounded-[2.5rem] border-[8px] border-gray-800 shadow-xl overflow-hidden group" data-aos="zoom-in-up" data-aos-delay="${i * 100}">
                             <video id="video${i}" src="video${i}.mp4" class="w-full h-full object-cover" loop playsinline controls></video>
                         </div>`);
                     }
@@ -199,8 +183,7 @@
         });
     </script>
 
-    <!-- SECCIÓN 6: SERVICIOS (Adaptada con imágenes) -->
-    <section class="pb-16 px-6">
+    <section class="pb-16 px-6" data-aos="fade-up">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-[3rem] shadow-sm text-center">
         
             <div class="flex justify-center mb-6">
@@ -209,52 +192,43 @@
 
             <h2 class="text-4xl font-bold text-olive mb-12">Servicios</h2>
         
-            <!-- Cuadrícula de 4 columnas -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Servicio 1: Videos UGC -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="50">
                     <img src="video.png" alt="Videos UGC" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Videos UGC</span>
                 </div>
             
-                <!-- Servicio 2: Unboxing -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="100">
                     <img src="unboxing.png" alt="Unboxing" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Unboxing</span>
                 </div>
 
-                <!-- Servicio 3: Voice over -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="150">
                     <img src="voice.png" alt="Voice over" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Voice over</span>
                 </div>
 
-                <!-- Servicio 4: Curvy -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
                     <img src="curvy.png" alt="Curvy" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Curvy</span>
                 </div>
 
-                <!-- Servicio 5: Producto Demo -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="250">
                     <img src="producto.png" alt="Producto Demo" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Producto Demo</span>
                 </div>
 
-                <!-- Servicio 6: Lifestyle -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
                     <img src="lifestyle.png" alt="Lifestyle" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Lifestyle</span>
                 </div>
 
-                <!-- Servicio 7: Mascotas -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="350">
                     <img src="mascotas.png" alt="Mascotas" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Mascotas</span>
                 </div>
 
-                <!-- Servicio 8: Beauty -->
-                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4">
+                <div class="bg-[#F5F0DD] p-6 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
                     <img src="beauty.png" alt="Beauty" class="w-24 h-24 object-contain">
                     <span class="text-2xl text-olive font-semibold text-lg">Beauty</span>
                 </div>
@@ -262,8 +236,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN FINAL: TRABAJEMOS JUNTOS -->
-    <section class="pb-16 px-6">
+    <section class="pb-16 px-6" data-aos="fade-up">
         <div class="max-w-6xl mx-auto bg-[#f6f4e7] pt-2 pb-12 px-6 md:px-16 rounded-[3rem] shadow-sm text-center">
             
             <div class="flex justify-center mb-6">
@@ -273,7 +246,6 @@
             <h2 class="text-4xl font-bold text-olive mb-12">¡Trabajemos juntos!</h2>
             
             <div class="flex flex-col items-center gap-6 text-gray-700">
-                <!-- TikTok (Link) -->
                 <a href="https://www.tiktok.com/@la.musita91" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity">
                     <svg class="w-5 h-5 md:w-8 md:h-8 text-olive" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.77 0 2.89 2.89 0 0 1 2.89-2.89h.35V7.47h-.35a6.34 6.34 0 1 0 6.34 6.34V7.55a8.77 8.77 0 0 0 3.72 1.48v-2.34z"/>
@@ -281,15 +253,13 @@
                     <span class="text-base md:text-2xl text-olive font-medium underline">@la.musita91</span>
                 </a>
                 
-                <!-- Email (Link) -->
-                <a href="mailto:wendymus2310@gmail.com" class="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity">
-                    <svg class="w-5 h-5 md:w-8 md:h-8 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4h16c1.1 0 2-.9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/>
-                    </svg>
-                    <span class="text-base md:text-2xl text-olive font-medium underline">wendymus2310@gmail.com</span>
+                <a href="mailto:wendymus2310@gmail.com" class="flex items-center gap-2 max-w-full px-2 justify-center md:justify-start hover:opacity-80 transition-opacity">
+                    <div class="bg-olive p-2 md:p-3 rounded-full text-white shrink-0">
+                        <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                    <span class="text-[0.85rem] sm:text-base md:text-xl font-medium text-olive underline whitespace-nowrap tracking-tighter">wendymus2310@gmail.com</span>
                 </a>
                 
-                <!-- Ubicación (Se queda igual) -->
                 <div class="flex items-center gap-2 md:gap-3">
                     <svg class="w-5 h-5 md:w-8 md:h-8 text-olive" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/>
@@ -299,6 +269,14 @@
             </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Duración global de las animaciones (en milisegundos)
+            once: true,    // Hace que la animación se ejecute solo una vez al hacer scroll
+        });
+    </script>
 
 </body>
 </html>
