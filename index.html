@@ -75,7 +75,7 @@
                 <h2 class="text-4xl text-olive font-bold mb-6">¿Por qué el UGC funciona?</h2>
                 <p class="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
                     Hoy, las personas confían más en recomendaciones auténticas que en la publicidad tradicional.<br>
-                    El contenido generado por creadores permite a las marcas conectar con su audiencia de una manera natural, cercana y creíble, fortaleciendo la confianza y favoreciendo las decisiones de compra.
+                    El contenido generado por creadores permite a las marcas conectar con su audiencia de una manera natural, cercana y creíña, fortaleciendo la confianza y favoreciendo las decisiones de compra.
                 </p>
             </div>
 
@@ -130,7 +130,7 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-olive shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-                            <span><b>Versatilidad:</b> Versatilidad: Belleza, Lifestyle, Curvy, Hogar y Mascotas.</span>
+                            <span><b>Versatilidad:</b> Belleza, Lifestyle, Curvy, Hogar y Mascotas.</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <svg class="w-6 h-6 text-olive shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
@@ -189,8 +189,9 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <script>
                     for(let i=1; i<=6; i++) {
-                        document.write(`<div class="relative mx-auto w-64 h-[480px] bg-black rounded-[2.5rem] border-[8px] border-gray-800 shadow-xl overflow-hidden group" data-aos="zoom-in-up" data-aos-delay="${i * 150}" data-aos-duration="1000">
-                            <video id="video${i}" src="video${i}.mp4" class="w-full h-full object-cover" loop playsinline controls></video>
+                        // Cambiamos 'object-cover' por 'object-contain' y añadimos 'max-h-full w-auto mx-auto' para corregir el estiramiento en pantalla completa.
+                        document.write(`<div class="relative mx-auto w-64 h-[480px] bg-black rounded-[2.5rem] border-[8px] border-gray-800 shadow-xl overflow-hidden group flex items-center justify-center" data-aos="zoom-in-up" data-aos-delay="${i * 150}" data-aos-duration="1000">
+                            <video id="video${i}" src="video${i}.mp4" class="max-h-full w-auto object-contain mx-auto" loop playsinline controls></video>
                         </div>`);
                     }
                 </script>
